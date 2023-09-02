@@ -40,3 +40,57 @@ console.log(p);
 
 
 /*Conditionals: if, if-else, */
+
+//Loop : Repeat
+var num=10;
+
+for(var i=0;i<num;i++)
+{
+    console.log(i);
+}
+
+/*  Functions : There are 6 styles to create Functions (3 is ES5/other in ES6)
+*/
+function Oreo()
+{
+    console.log("Split");
+    console.log("Lick");
+    console.log("Dunk");
+}
+
+Oreo();
+
+/* Push Pop Shift Unshift Splice */
+var arr=[1,2,3,4,5];
+arr.push(6);
+console.log(arr);
+arr.pop();
+console.log(arr);
+arr.unshift(0);
+console.log(arr);
+arr.shift();
+console.log(arr);
+arr.splice(3,2);
+console.log(arr);
+
+/* Objects:
+Holding details in a key value pair
+
+1] Blank Object
+var a={}
+
+2]Filled Object
+*/
+var candidate={
+    age:24,
+    name:"Vikrant",
+    email:"vd@gmail.com",
+    linkedin:"Vikrant",
+    contact:9921123
+}
+
+//Property having Function is called a method
+
+// How to update a property
+candidate.name="Vikrant Dekate"
+
