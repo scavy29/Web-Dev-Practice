@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Password</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        width: 100%;
+        height: 100%;
+        background-color: navy;
+    }
+    .login
+    {
+        background-color: red;
+        width: 370px;
+        height: 190px;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        padding: 10px;
+        font-size: 30px;
+    }
+    input{
+        width: 290px;
+        height: 30px;
+    }
+    #eyeicon{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div class="login">
+        <label for="">Email</label>
+        <br>
+        <input type="text">
+        <br>
+        <label for="">Password</label>
+        <br>
+        <input type="password" id="password">
+        <img src="closeeye.png" alt="" width="50px" style="margin-left: 290px;margin-top: -100px;cursor: pointer;" id="eyeicon">
+    </div>
+
+    <script>
+        var eyeicon=document.getElementById('eyeicon');
+        var password=document.getElementById('password');
+
+        eyeicon.onclick=function(){
+            if(password.type=="password")
+            {
+                password.type="text";
+                eyeicon.src="openeye.png";
+            }
+            else
+            {
+                password.type="password";
+                eyeicon.src="closeeye.png";
+            }
+        }
+    </script>
+</body>
+</html>

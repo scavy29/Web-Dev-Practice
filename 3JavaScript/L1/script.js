@@ -63,14 +63,16 @@ Oreo();
 /* Push Pop Shift Unshift Splice */
 var arr=[1,2,3,4,5];
 arr.push(6);
-console.log(arr);
+console.log(arr);   
 arr.pop();
 console.log(arr);
-arr.unshift(0);
+//Insert at Start
+arr.unshift(0); 
 console.log(arr);
+//Delete from Start
 arr.shift();
 console.log(arr);
-arr.splice(3,2);
+arr.splice(2,3);
 console.log(arr);
 
 /* Objects:
@@ -93,4 +95,4 @@ var candidate={
 
 // How to update a property
 candidate.name="Vikrant Dekate"
-
+candidate.contact=8600000054
